@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Navbar with Carousel</title>
+    <!-- Link to the external CSS -->
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/styleCarousel.css">
+    <link rel="stylesheet" href="style/StyleAbout.css">
+    <link rel="stylesheet" href="style/stylenav.css">
+    <link rel="stylesheet" href="style/styleCard.css">
+    <link rel="stylesheet" href="style/styleFooter.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Logo image (replace the src URL with your image path) -->
+                <img src="image/erasebg-transformed (2).png" alt="BrandLogo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Excursions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Qui sommes-nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suivis Réservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="language-select">
+                            <select class="form-select" aria-label="Language selection">
+                                <option value="en">English</option>
+                                <option value="fr">Français</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-item active">
+            <div class="carousel-overlay"></div>
+            <img src="image/equ.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Discover Amazing Excursions</h5>
+                <p>Experience unforgettable adventures with our carefully crafted excursion packages.</p>
+                <a href="#" class="hero-btn">Explore Now</a>
+            </div>
+        </div>
+        <div class="carousel-item active">
+            <div class="carousel-overlay"></div>
+            <img src="image/carousel2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Discover Amazing Excursions</h5>
+                <p>Experience unforgettable adventures with our carefully crafted excursion packages.</p>
+                <a href="#" class="hero-btn">Explore Now</a>
+            </div>
+        </div>
+        <div class="carousel-item active">
+            <div class="carousel-overlay"></div>
+            <img src="image/car3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Discover Amazing Excursions</h5>
+                <p>Experience unforgettable adventures with our carefully crafted excursion packages.</p>
+                <a href="#" class="hero-btn">Explore Now</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <div class="scroll-down">
+            <div class="arrow"></div>
+        </div>
+    </div>
+
+
+    <!-- About Us Section -->
+<section class="about-us-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-subtitle">Your Gateway to Authentic Tunisia Adventures</p>
+        </div>
+        
+        <div class="row align-items-center">
+            <!-- Left column with text -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="about-content" data-aos="fade-right">
+                    <h3 class="about-heading">Discover Tunisia With Us</h3>
+                    <p class="about-text">Founded in 2005, Tunisia Excursions has been the premier provider of authentic adventure experiences across the stunning landscapes of Tunsia. Our passion for showcasing the natural beauty and rich culture of our country drives everything we do.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-patch-check-fill"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Expert Local Guides</h4>
+                                <p>Our team consists of experienced local guides who know every hidden gem of Tunisia.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Safety First Approach</h4>
+                                <p>Your safety is our priority with well-maintained equipment and thorough training.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Sustainable Tourism</h4>
+                                <p>We're committed to preserving Tunisia's natural beauty for generations to come.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn about-cta-btn mt-4">Meet Our Team</a>
+                </div>
+            </div>
+            
+            <!-- Right column with images -->
+            <div class="col-lg-6">
+                <div class="about-images" data-aos="fade-left">
+                    <div class="image-grid">
+                        <div class="main-image">
+                            <img src="image/pic .jpg" alt="Our Team" class="img-fluid rounded">
+                        </div>
+                        <div class="image-stack">
+                            <div class="stack-image top">
+                                <img src="image/cameltour-in-Cappadocia.jpg" alt="Expert Guide" class="img-fluid rounded">
+                            </div>
+                            <div class="stack-image bottom">
+                                <img src="image/cameltour-in-Cappadocia.jpg" alt="Office Team" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-badge">
+                        <span class="years">20+</span>
+                        <span class="text">Years of Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats Section -->
+        <div class="row stats-row mt-5 text-center">
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Unique Excursions</div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Expert Guides</div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">Customer Rating</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Excursion Cards Section -->
+<section class="excursion-section">
+    <div class="container py-5">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Our Popular Excursions</h2>
+            <p class="section-subtitle">Discover Morocco's breathtaking landscapes with our adventurous excursions</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Quad Biking Card -->
+            <div class="col-lg-4 col-md-6">
+                <div class="excursion-card">
+                    <div class="excursion-image">
+                        <img src="image/quad.jpg" alt="Quad Biking Adventure" class="img-fluid">
+                        <div class="excursion-tag">Most Popular</div>
+                    </div>
+                    <div class="excursion-content">
+                        <h3 class="excursion-title">Desert Quad Biking</h3>
+                        <div class="excursion-details">
+                            <div class="excursion-duration">
+                                <i class="bi bi-clock"></i>
+                                <span>3 Hours</span>
+                            </div>
+                            <div class="excursion-difficulty">
+                                <i class="bi bi-lightning"></i>
+                                <span>Moderate</span>
+                            </div>
+                        </div>
+                        <p class="excursion-description">
+                            Experience the thrill of racing across golden sand dunes on powerful quad bikes. Our expert guides will lead you through breathtaking desert landscapes and hidden oases.
+                        </p>
+                        <div class="excursion-footer">
+                            <div class="excursion-price">
+                                <span class="price-value">65 TND</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#" class="book-now-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Horseback Riding Card -->
+            <div class="col-lg-4 col-md-6">
+                <div class="excursion-card">
+                    <div class="excursion-image">
+                        <img src="image/horses.jpg" alt="Horseback Riding Tour" class="img-fluid">
+                        <div class="excursion-tag">Scenic</div>
+                    </div>
+                    <div class="excursion-content">
+                        <h3 class="excursion-title">Mountain Horseback Tour</h3>
+                        <div class="excursion-details">
+                            <div class="excursion-duration">
+                                <i class="bi bi-clock"></i>
+                                <span>4 Hours</span>
+                            </div>
+                            <div class="excursion-difficulty">
+                                <i class="bi bi-lightning"></i>
+                                <span>Easy</span>
+                            </div>
+                        </div>
+                        <p class="excursion-description">
+                            Explore picturesque mountain trails on our gentle horses. Wind through traditional Berber villages and enjoy stunning panoramic views of the Atlas Mountains.
+                        </p>
+                        <div class="excursion-footer">
+                            <div class="excursion-price">
+                                <span class="price-value">75 TND    </span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#" class="book-now-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Camel Riding Card -->
+            <div class="col-lg-4 col-md-6">
+                <div class="excursion-card">
+                    <div class="excursion-image">
+                        <img src="image/cameltour-in-Cappadocia.jpg" alt="Camel Caravan Experience" class="img-fluid">
+                        <div class="excursion-tag">Authentic</div>
+                    </div>
+                    <div class="excursion-content">
+                        <h3 class="excursion-title">Sunset Camel Caravan</h3>
+                        <div class="excursion-details">
+                            <div class="excursion-duration">
+                                <i class="bi bi-clock"></i>
+                                <span>2 Hours</span>
+                            </div>
+                            <div class="excursion-difficulty">
+                                <i class="bi bi-lightning"></i>
+                                <span>Easy</span>
+                            </div>
+                        </div>
+                        <p class="excursion-description">
+                            Journey across the desert just like ancient traders on our friendly camels. Watch the spectacular sunset over the dunes and enjoy traditional mint tea at our desert camp.
+                        </p>
+                        <div class="excursion-footer">
+                            <div class="excursion-price">
+                                <span class="price-value">50 TND</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#" class="book-now-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        
+        <div class="text-center mt-5">
+            <a href="#" class="view-all-btn">View All Excursions <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+<!-- Contact Us Section -->
+<section class="contact-us py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title" style="color: var(--primary-color);">Get in Touch</h2>
+            <p class="section-subtitle" style="color: var(--dark-color);">We'd love to hear from you. Reach out for any inquiries or questions!</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label" style="color: var(--dark-color);">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" style="color: var(--dark-color);">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label" style="color: var(--dark-color);">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="background-color: var(--primary-color); color: white;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                  
+<!-- Footer -->
+<footer class="footer-section pt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <div class="footer-logo mb-3">
+                    <img src="image/erasebg-transformed (2).png" alt="Brand Logo" class="img-fluid" style="max-height: 60px;">
+                </div>
+                <p class="footer-description">
+                    Discover the beauty of Morocco with our authentic excursions and adventures. We offer unforgettable experiences with professional guides and premium service.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Excursions</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Booking Status</a></li>
+                </ul>
+            </div>
+            
+            <!-- Popular Excursions -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Popular Excursions</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Desert Quad Biking</a></li>
+                    <li><a href="#">Mountain Horseback Tour</a></li>
+                    <li><a href="#">Sunset Camel Caravan</a></li>
+                    <li><a href="#">Sahara Desert Camping</a></li>
+                    <li><a href="#">Atlas Mountains Hiking</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-heading">Contact Us</h5>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Route Touristique Kantaoui En Face Hotel Soviva</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone"></i>
+                        <span>(+216) 25 769 769</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                        <span> booking@rosatravel.tn</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-clock"></i>
+                        <span>Mon-Sun: 8:00 AM - 6:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="footer-bottom mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright mb-0">
+                        &copy; 2025 Tunsia Excursions. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-bottom-links text-md-end">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    
+        // Custom navbar toggler
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler) {
+            navbarToggler.innerHTML = '<span class="navbar-toggler-icon"><span></span></span>';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+        // Initialize AOS for scroll animations if available
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out'
+            });
+        }
+        
+        // Add smooth scrolling when clicking on "View All Excursions"
+        const viewAllBtn = document.querySelector('.view-all-btn');
+        if (viewAllBtn) {
+            viewAllBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetSection = document.querySelector('#all-excursions');
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
+    });
+
+    // Add this to your existing script section
+document.addEventListener("DOMContentLoaded", function() {
+    // Scroll down arrow functionality
+    const scrollDownArrow = document.querySelector('.scroll-down');
+    if (scrollDownArrow) {
+        scrollDownArrow.addEventListener('click', function() {
+            // Scroll to the excursion section
+            const excursionSection = document.querySelector('.excursion-section');
+            if (excursionSection) {
+                window.scrollTo({
+                    top: excursionSection.offsetTop - 80, // Offset for navbar height
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Initialize testimonial carousel
+    const testimonialCarousel = new bootstrap.Carousel(document.getElementById('testimonialCarousel'), {
+        interval: 5000,
+        wrap: true
+    });
+    
+    // Animate testimonial cards on scroll
+    const animateOnScroll = function() {
+        const testimonialSection = document.querySelector('.testimonials-section');
+        if (testimonialSection) {
+            const sectionPosition = testimonialSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (sectionPosition < screenPosition) {
+                testimonialSection.classList.add('animate');
+            }
+        }
+    };
+    
+    window.addEventListener('scroll', animateOnScroll);
+    
+    // Trigger once on page load
+    animateOnScroll();});
+
+    </script>
+    
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
