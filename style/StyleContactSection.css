@@ -1,0 +1,205 @@
+/* Contact Section Styling - Revised Version */
+:root {
+    --primary-color: #A7001E;
+    --secondary-color: #A7001E;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --transition: all 0.3s ease;
+}
+
+/* Base styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.contact-section {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+/* Headings */
+.contact-section h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 32px;
+    border-bottom: 3px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Form elements */
+.contact-section .form-control {
+  
+    margin-bottom: 25px;
+    background-color: transparent;
+    transition: var(--transition);
+}
+
+
+
+.contact-section .form-control::placeholder {
+    color: #999;
+    font-weight: 300;
+}
+
+.contact-section .title-selector {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.contact-section .title-selector select {
+    width: 100px;
+    padding: 12px 5px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    background-color: transparent;
+    color: #333;
+    transition: var(--transition);
+}
+
+.contact-section .title-selector select:focus {
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.contact-section .title-selector input {
+    flex-grow: 1;
+}
+
+/* Submit button */
+.contact-section .btn-primary {
+    display: inline-block;
+      padding: 12px 25px;
+      background-color: transparent;
+      color: var(--primary-color);
+      text-decoration: none;
+      border: 2px solid var(--primary-color);
+      border-radius: 50px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+ 
+}
+
+.contact-section .btn-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateX(5px);
+    border: 2px solid var(--primary-color);
+
+}
+
+
+
+/* Contact info box */
+.contact-info {
+    background-color: var(--primary-color);
+    padding: 40px 30px;
+    height: 100%;
+    color: white;
+    position: relative;
+    border: 1px;
+}
+
+.contact-info:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+}
+
+.contact-info h4 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+    position: relative;
+    font-size: 24px;
+}
+
+.contact-info h4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.contact-info p i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 20px;
+}
+
+.contact-info strong {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Social icons */
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 10px;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Map styling */
+.map-container {
+    margin-top: 50px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .contact-info {
+        margin-top: 40px;
+    }
+}
