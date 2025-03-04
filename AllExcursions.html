@@ -4,9 +4,336 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/stylenav.css">
+    <link rel="stylesheet" href="style/styleFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style/styleCard.css">
     <title>AllExcursions</title>
 </head>
 <body>
     
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+           
+            <img src="image/erasebg-transformed (2).png" alt="BrandLogo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Excursions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Who we are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Booking Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link panier-link" href="#">
+                        <i class="bi bi-cart panier-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="language-select">
+                        <select class="form-select" aria-label="Language selection">
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Filter Section -->
+<div class="container py-5">
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <select id="categoryFilter" class="form-select" aria-label="Category Filter">
+                <option value="">Filter by Category</option>
+                <option value="Rider">Rider</option>
+                <option value="Scenic">Scenic</option>
+                <option value="Authentic">Authentic</option>
+            </select>
+        </div>
+     
+    </div>
+</div>
+
+
+
+
+
+    <section class="excursion-section">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">All Our Excursions</h2>
+                <p class="section-subtitle">Discover Tunisia's breathtaking landscapes with our adventurous excursions
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Quad Biking Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="excursion-card">
+                        <div class="excursion-image">
+                            <img src="image/quad.jpg" alt="Quad Biking Adventure" class="img-fluid">
+                            <div class="excursion-tag">Rider</div>
+                        </div>
+                        <div class="excursion-content">
+                            <h3 class="excursion-title"> Quad Biking</h3>
+                            <div class="excursion-details">
+                                <div class="excursion-duration">
+                                    <i class="bi bi-clock"></i>
+                                    <span>1:30 Hours</span>
+                                </div>
+                                <div class="excursion-difficulty">
+                                    <i class="bi bi-lightning"></i>
+                                    <span>Moderate</span>
+                                </div>
+                            </div>
+                            <p class="excursion-description">
+                                Experience the thrill of racing across golden sand dunes on powerful quad bikes. Our
+                                expert guides will lead you through landscapes and hidden oases.
+                            </p>
+                            <div class="excursion-footer">
+                                <div class="excursion-price">
+                                    <span class="price-value">60 TND</span>
+                                    <span class="price-per">per person</span>
+                                </div>
+                                <a href="#" class="book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horseback Riding Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="excursion-card">
+                        <div class="excursion-image">
+                            <img src="image/horses.jpg" alt="Horseback Riding Tour" class="img-fluid">
+                            <div class="excursion-tag">Scenic</div>
+                        </div>
+                        <div class="excursion-content">
+                            <h3 class="excursion-title">Mountain Horseback Tour</h3>
+                            <div class="excursion-details">
+                                <div class="excursion-duration">
+                                    <i class="bi bi-clock"></i>
+                                    <span>1 Hours</span>
+                                </div>
+                                <div class="excursion-difficulty">
+                                    <i class="bi bi-lightning"></i>
+                                    <span>Easy</span>
+                                </div>
+                            </div>
+                            <p class="excursion-description">
+                                Explore picturesque mountain trails on our gentle horses. Wind through traditional
+                                Berber villages and enjoy stunning panoramic views of the Atlas Mountains.
+                            </p>
+                            <div class="excursion-footer">
+                                <div class="excursion-price">
+                                    <span class="price-value">60 TND </span>
+                                    <span class="price-per">per person</span>
+                                </div>
+                                <a href="#" class="book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camel Riding Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="excursion-card">
+                        <div class="excursion-image">
+                            <img src="image/cameltour-in-Cappadocia.jpg" alt="Camel Caravan Experience"
+                                class="img-fluid">
+                            <div class="excursion-tag">Authentic</div>
+                        </div>
+                        <div class="excursion-content">
+                            <h3 class="excursion-title">Sunset Camel Caravan</h3>
+                            <div class="excursion-details">
+                                <div class="excursion-duration">
+                                    <i class="bi bi-clock"></i>
+                                    <span>2 Hours</span>
+                                </div>
+                                <div class="excursion-difficulty">
+                                    <i class="bi bi-lightning"></i>
+                                    <span>Easy</span>
+                                </div>
+                            </div>
+                            <p class="excursion-description">
+                                Journey across the oasis just like ancient traders on our friendly camels. Watch the
+                                spectacular sunset over the dunes and enjoy traditional mint tea at our camp.
+                            </p>
+                            <div class="excursion-footer">
+                                <div class="excursion-price">
+                                    <span class="price-value">60 TND</span>
+                                    <span class="price-per">per person</span>
+                                </div>
+                                <a href="#" class="book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-section pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-logo mb-3">
+                        <img src="image/Logo_Quad_Sousse_Loisirs2_page-0001.jpg" alt="Brand Logo" class="img-fluid"
+                            style="max-height: 60px;">
+                    </div>
+                    <p class="footer-description">
+                        Discover the beauty of Morocco with our authentic excursions and adventures. We offer
+                        unforgettable experiences with professional guides and premium service.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Excursions</a></li>
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Booking Status</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Excursions -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Our Excursions</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Quad Biking</a></li>
+                        <li><a href="#"> Horseback Tour</a></li>
+                        <li><a href="#">Sunset Camel Caravan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Route Touristique Kantaoui En Face Hotel Soviva</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <span>(+216) 25 769 769</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <span> booking@rosatravel.tn</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-clock"></i>
+                            <span>Mon-Sun: 8:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright mb-0">
+                            &copy; 2025 Quadsousse.com Powered by 3T
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links text-md-end">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
