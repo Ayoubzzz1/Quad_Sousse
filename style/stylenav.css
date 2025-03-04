@@ -88,4 +88,9 @@
   .language-select .form-select:focus {
     box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
   }
-  
+  .panier-icon {
+    font-size: 20px;
+    border-radius: 50%; 
+    padding: 10px;
+  }
+ 
