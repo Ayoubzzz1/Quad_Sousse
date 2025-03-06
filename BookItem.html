@@ -112,21 +112,16 @@
 
             thumbnails.forEach(thumbnail => {
                 thumbnail.addEventListener('click', function() {
-                    // Remove active class from all thumbnails
                     thumbnails.forEach(t => t.classList.remove('active'));
                     
-                    // Add active class to clicked thumbnail
                     this.classList.add('active');
 
-                    // Update main image
                     const fullImage = this.getAttribute('data-full-image');
                     mainImage.src = fullImage;
                     mainImage.setAttribute('href', fullImage);
                     
-                    // Update lightbox attributes
                     mainImage.setAttribute('data-title', this.getAttribute('data-title'));
 
-                    // Update title and description
                     imageTitle.textContent = this.getAttribute('data-title');
                     imageDescription.textContent = imageDescriptions[fullImage] || 'Explore the beauty of the desert.';
                 });
@@ -179,7 +174,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-between mt-4">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="buttn">
                         <i class="bi bi-check-circle"></i> Confirm Reservation
                     </button>
                     <button type="button" class="btn btn-secondary" onclick="window.print()">
@@ -194,30 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
-    <script>
-        // Total calculation script (same as before)
-        document.getElementById('numAdults').addEventListener('change', calculateTotal);
-        document.getElementById('numChildren').addEventListener('change', calculateTotal);
-        document.getElementById('hotelName').addEventListener('change', calculateTotal);
 
-        function calculateTotal() {
-            const adults = document.getElementById('numAdults').value || 0;
-            const children = document.getElementById('numChildren').value || 0;
-            const hotel = document.getElementById('hotelName').value;
-            
-            let basePrice = 100; // Base price per person
-            let hotelMultiplier = 1;
-
-            switch(hotel) {
-                case 'hotel1': hotelMultiplier = 1; break;
-                case 'hotel2': hotelMultiplier = 1.2; break;
-                case 'hotel3': hotelMultiplier = 1.5; break;
-            }
-
-            const totalAmount = (adults * basePrice + children * (basePrice * 0.5)) * hotelMultiplier;
-            document.getElementById('totalAmount').value = `$${totalAmount.toFixed(2)}`;
-        }
-    </script>
 
 
 
