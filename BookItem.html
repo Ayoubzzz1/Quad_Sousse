@@ -143,19 +143,42 @@
                 </label>
                 <input type="date" class="form-control" id="departureDate" required>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="departureTime" class="form-label">
+            <div class="col-md-4 mb-3">
+                <label class="form-label">
                     <i class="bi bi-clock"></i> Time of Departure
                 </label>
-                <select class="form-select" id="departureTime" required>
-                    <option selected disabled>Choose Time</option>
-                    <option value="8:00">8:00 AM</option>
-                    <option value="8:30">8:30 AM</option>
-                    <option value="10:00">10:00 AM</option>
-                    <option value="14:00">2:00 PM</option>
-                </select>
+                <div class="time-picker-container">
+                    <div class="time-option">
+                        <input type="radio" name="departureTime" id="time8" value="08:00" class="time-radio" required>
+                        <label for="time8" class="time-label">
+                            <span class="time-value">08:00</span>
+                            <span class="time-period">AM</span>
+                        </label>
+                    </div>
+                    <div class="time-option">
+                        <input type="radio" name="departureTime" id="time9" value="09:00" class="time-radio">
+                        <label for="time9" class="time-label">
+                            <span class="time-value">09:00</span>
+                            <span class="time-period">AM</span>
+                        </label>
+                    </div>
+                    <div class="time-option">
+                        <input type="radio" name="departureTime" id="time11" value="11:00" class="time-radio">
+                        <label for="time11" class="time-label">
+                            <span class="time-value">11:00</span>
+                            <span class="time-period">AM</span>
+                        </label>
+                    </div>
+                    <div class="time-option">
+                        <input type="radio" name="departureTime" id="time14" value="14:00" class="time-radio">
+                        <label for="time14" class="time-label">
+                            <span class="time-value">14:00</span>
+                            <span class="time-period">PM</span>
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-2 mb-2">
                 <label for="numAdults" class="form-label">
                     <i class="bi bi-person-fill"></i> Adults
                 </label>
